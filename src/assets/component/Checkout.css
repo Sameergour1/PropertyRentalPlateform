@@ -1,0 +1,164 @@
+/* Container styling */
+.checkout {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 550px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styling */
+.checkout h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Section styling */
+.checkout .section {
+    margin-bottom: 25px;
+}
+
+.checkout .section h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #444;
+    font-weight: 600;
+}
+
+.checkout label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #555;
+}
+
+.checkout input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.checkout input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.checkout .summary {
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Button styling */
+.checkout button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+.checkout button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.checkout .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Form grid styling */
+.checkout form {
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout {
+        padding: 15px;
+    }
+}
+/* Property List styling */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Property Item styling */
+.property-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 320px;
+    flex: 1 1 calc(33.333% - 20px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.property-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.property-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.property-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.property-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .property-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .property-item {
+        flex: 1 1 100%;
+    }
+}

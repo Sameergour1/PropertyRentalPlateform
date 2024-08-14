@@ -1,0 +1,214 @@
+/* Container for the entire property list section */
+.property-list-container {
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+/* Filters section styling */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters select,
+.filters input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    width: 100%;
+    max-width: 220px;
+    transition: border-color 0.3s;
+}
+
+.filters select:focus,
+.filters input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.filters label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+.filters input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Property cards styling */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Property card styling */
+.property-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Property card image styling */
+.property-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Property card details styling */
+.property-card .details {
+    padding: 20px;
+    text-align: left;
+}
+
+.property-card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.property-card p {
+    margin: 0 0 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Property card button styling */
+.property-card button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.property-card button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .property-card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .property-card {
+        max-width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select,
+    .filters input {
+        max-width: 100%;
+    }
+}
+
+
+/* PropertyList.css */
+
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center-align the cards */
+    padding: 20px;
+  }
+  
+  .property-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px; /* Width of each card */
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px); /* Adjust card width to fit 3 per row with gaps */
+    transition: transform 0.3s;
+  }
+  
+  .property-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .property-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .property-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .property-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .property-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .property-item {
+      flex: 1 1 calc(50% - 40px); /* 2 cards per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .property-item {
+      flex: 1 1 100%; /* 1 card per row for small screens */
+    }
+  }
+  

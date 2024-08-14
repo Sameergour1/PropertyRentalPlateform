@@ -1,0 +1,129 @@
+/* Favorites Styles */
+.favorites {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorites h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  
+  .favorite-image {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .favorite-info {
+    flex: 1;
+  }
+  
+  .favorite-info button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .favorite-info button:hover {
+    background-color: #c82333;
+  }
+
+
+  
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-image {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .favorite-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .favorite-info h3 {
+    margin: 0;
+  }
+  
+  .favorite-info p {
+    margin: 5px 0;
+  }
+  
+  .favorite-info button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .favorite-info button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-image {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .favorite-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .favorite-info h3 {
+    margin: 0;
+  }
+  
+  .favorite-info p {
+    margin: 5px 0;
+  }
+  
+  .favorite-info button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .favorite-info button:hover {
+    background-color: #0056b3;
+  }
+  
